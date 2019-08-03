@@ -69,7 +69,7 @@
     color: #fafafa;
 }
 
-.ul-tel-nav {
+.telefones {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,5 +152,8 @@
 
     .btn-tel {
         font-size: .25em;
+    }
+    .telefones{
+        height: 60%;
     }
 }
