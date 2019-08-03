@@ -195,6 +195,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: PT Serif;
+    font-style: normal;
+    color: #fafafa;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -208,8 +219,60 @@
     align-items: center;
     height: 50%;
 }
-.main-text{
-    
+
+.main-text {
+    font-size: 2em;
+}
+
+.main-btn {
+    font-family: Aldrich;
+    font-style: normal;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    color: #fafafa;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+}
+
+.second-section {
+    width: 100%;
+    height: 500px;
+    background: #2B4D6B;
+}
+
+.second-section .container {
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: PT Serif;
+    font-style: normal;
+    color: #2B4D6B;
+    background: #E0E0E0;
+    padding: 10px;
+    transform: translate(0,-20%);
+    z-index: 2;
+}
+.card .title{
+    font-family: Aldrich;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.description{
+    color: #fafafa;
+    text-align: center;
 }
 
 
