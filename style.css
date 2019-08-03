@@ -208,6 +208,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-top: 50px;
+    width: 80%;
 }
 
 .div-nome,
@@ -237,40 +238,111 @@
 /* Responsivo Header */
 
 @media screen and (min-width: 1200px) {
-    .form{
+    .form {
         font-size: 1.5em;
     }
+
+    .input {
+        height: 1.5em;
+    }
+
+    .textarea {
+        height: 4em;
+    }
 }
+
 @media screen and (max-width: 1200px) {
-    .form{
+    .form {
         font-size: 1.25em;
+    }
+
+    .input {
+        height: 1.5em;
+    }
+
+    .textarea {
+        height: 100px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .form{
+    .form {
         font-size: 1em;
     }
-    .contato .container{
+
+    .contato .container {
         width: fit-content;
+    }
+
+    .input {
+        height: 1.5em;
+    }
+
+    .textarea {
+        height: 75px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .form{
+    .form {
         font-size: .75em;
+    }
+
+    .input {
+        height: 1.5em;
+    }
+
+    .textarea {
+        height: 75px;
+    }
+
+    .div-nome,
+    .div-email,
+    .div-assunto,
+    .div-mensagem {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .title-contato {
+        font-size: 2.5em;
+    }
+    .submit-enviar{
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .form{
+    .form {
         font-size: .5em;
     }
 }
 
 @media (max-width: 575.98px) {
-    .form{
+    .form {
         font-size: .25em;
+    }
+
+    .input {
+        height: 10px;
+    }
+
+    .textarea {
+        height: 70px;
+    }
+
+    .div-nome,
+    .div-email,
+    .div-assunto,
+    .div-mensagem {
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .title-contato {
+        font-size: 2em;
+    }
+    .submit-enviar{
+        font-size: .75em;
+        padding: 5px;
     }
 }
 
