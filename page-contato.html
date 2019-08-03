@@ -1,28 +1,40 @@
-<section>
-    <div>
-        <h2>Fale conosco</h2>
-        <div>
-            <form>
-                <div>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <title>Header</title>
+</head>
+
+<body>
+    <section class="contato">
+        <div class="container">
+            <h1 class="title-contato">Fale conosco</h1>
+            <form class="form">
+                <div class="div-nome">
                     <label for='name'>Nome:</label>
-                    <input type='text' id='name' value='name' placeholder="Ex.: João da Silva">
+                    <input class="input" type='text' id='name' placeholder="Ex.: João da Silva">
                 </div>
-                <div>
+                <div class="div-email">
                     <label for='email'>Email:</label>
-                    <input type='email' id='email' value='email' placeholder="Ex.: joao-silva@exemplo.com.br">
+                    <input class="input" type='email' id='email' placeholder="Ex.: joao-silva@exemplo.com.br">
                 </div>
-                <div>
+                <div class="div-assunto">
                     <label for='subject'>Assunto:</label>
-                    <input type='text' id='subject' value='subject' placeholder="Ex.: Abertura de empresa">
+                    <input class="input" type='text' id='subject' placeholder="Ex.: Abertura de empresa">
                 </div>
-                <div>
+                <div class="div-mensagem">
                     <label for='message'>Mensagem:</label>
-                    <textarea rows='8' cols='140' id='message' placeholder="Digite aqui a sua mensagem.."></textarea>
+                    <textarea rows='8' class="input" cols='140' id='message' placeholder="Digite aqui a sua mensagem.."></textarea>
                 </div>
-                <div>
-                    <button type="submit">Enviar</button>
+                <div class="div-submit">
+                    <button type="submit" class="submit-enviar">Enviar</button>
                 </div>
             </form>
         </div>
-    </div>
-</section>
+    </section>
+</body>
+
+</html>
