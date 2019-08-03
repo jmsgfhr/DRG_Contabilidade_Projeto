@@ -41,7 +41,7 @@
     font-style: normal;
 }
 
-.nav-logo {
+.logo {
     width: 20%;
     height: 100%;
     display: flex;
@@ -50,13 +50,13 @@
     justify-content: center;
 }
 
-.logo {
+.logo-text {
     font-weight: bold;
     font-size: 2em;
     color: #fafafa;
 }
 
-.nav-btns {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,7 +84,7 @@
 /* Responsivo Header */
 
 @media screen and (min-width: 1200px) {
-    .logo {
+    .logo-tex {
         font-size: 2.5em;
     }
 
@@ -98,7 +98,7 @@
 }
 
 @media screen and (max-width: 992px) {
-    .logo {
+    .logo-tex {
         font-size: 2.25em;
     }
 
@@ -112,7 +112,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .logo {
+    .logo-tex {
         font-size: 2em;
     }
 
@@ -129,7 +129,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .logo {
+    .logo-tex {
         font-size: 1.75em;
     }
 
@@ -142,7 +142,7 @@
     }
 }
 @media (max-width: 575.98px) {
-    .logo {
+    .logo-tex {
         font-size: 1.5em;
     }
 
