@@ -3,7 +3,7 @@
     --gray: #E0E0E0;
 }
 
-.container {
+.servicos .container {
     display: flex;
     flex-direction: column;
 }
@@ -11,7 +11,7 @@
 
 /* Título */
 
-.title-services h1 {
+.servicos .title-services h1 {
     font-family: Aldrich;
     font-size: 2.25em;
     color: var(--blue);
@@ -24,7 +24,7 @@
 
 /* Descrição */
 
-.description-one h3 {
+.servicos .description-one h3 {
     font-family: PT serif;
     font-size: 1.125em;
     color: var(--blue);
@@ -36,24 +36,22 @@
 
 /* Serviços */
 
-.second-services {
+.servicos .second-services {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.list-services {
+.servicos .list-services {
     background-color: var(--gray);
-    margin-right: 30px;
-    margin-left: 30px;
-    margin: 0 auto;
-    padding: 0 10px 10px 0;
+    margin: 30px 30px;
+    padding: 10px;
     font-weight: normal;
     height: 300px;
     line-height: 30px;
 }
 
-.second-services h2 {
+.servicos .second-services h2 {
     color: var(--blue);
     font-family: Aldrich;
     font-size: 1.5em;
@@ -62,7 +60,7 @@
     font-weight: normal;
 }
 
-.second-services li {
+.servicos .second-services li {
     font-family: PT serif;
     font-size: 1.125em;
     color: var(--blue);
@@ -70,7 +68,7 @@
     list-style-type: disc;
 }
 
-.second-services li::before {
+.servicos .second-services li::before {
     content: "·";
     font-size: 90px;
     line-height: 20px;
@@ -80,51 +78,53 @@
 /* Responsivo Serviços */
 
 @media screen and (min-width: 1200px) {
-    .container {
+    .servicos .container {
+        max-width: 1200px;
         font-size: 1.5em;
     }
 
-    .list-services {
-        height: 400px;
+    .servicos .list-services {
+        width: 30%;
+        height: 360px;
     }
 }
 
 @media (max-width: 1199.98px) {
-    .container {
+    .servicos .container {
         font-size: 1em;
     }
 
-    .list-services {
+    .servicos .list-services {
         height: 350px;
         width: 30%;
     }
 }
 
 @media (max-width: 991.98px) {
-    .container {
+    .servicos .container {
         font-size: .9em;
     }
 
-    .list-services {
+    .servicos .list-services {
         height: 360px;
         width: 30%;
     }
 }
 
 @media (max-width: 767.98px) {
-    .second-services {
+    .servicos .second-services {
         flex-direction: column;
     }
 
-    .list-services {
+    .servicos .list-services {
         height: 350px;
-        width: 50%;
+        width: 80%;
         margin-bottom: 50px;
     }
 }
 
 @media (max-width: 575.98px) {
-    .container {
+    .servicos .container {
         font-size: .75em;
     }
 }
