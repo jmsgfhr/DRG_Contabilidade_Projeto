@@ -21,10 +21,12 @@
 @media screen and (min-width: 1400px) {
 
     .header .container,
-    .footer .container {
+    .footer .container,
+    .second-section .container {
         max-width: 1400px;
     }
 }
+
 
 /* ▄█    █▄       ▄████████    ▄████████ ████████▄     ▄████████    ▄████████ 
   ███    ███     ███    ███   ███    ███ ███   ▀███   ███    ███   ███    ███ 
@@ -177,6 +179,178 @@
 }
 
 /* 
+   ▄█    █▄     ▄██████▄    ▄▄▄▄███▄▄▄▄      ▄████████ 
+  ███    ███   ███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███ 
+  ███    ███   ███    ███ ███   ███   ███   ███    █▀  
+ ▄███▄▄▄▄███▄▄ ███    ███ ███   ███   ███  ▄███▄▄▄     
+▀▀███▀▀▀▀███▀  ███    ███ ███   ███   ███ ▀▀███▀▀▀     
+  ███    ███   ███    ███ ███   ███   ███   ███    █▄  
+  ███    ███   ███    ███ ███   ███   ███   ███    ███ 
+  ███    █▀     ▀██████▀   ▀█   ███   █▀    ██████████  */
+
+
+.main {
+    width: 100%;
+    height: 500px;
+    background-image: url("assets/img/img-fundo-home.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: PT Serif;
+    font-style: normal;
+    color: #fafafa;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.main-text {
+    font-size: 2em;
+}
+
+.main-btn {
+    font-family: Aldrich;
+    font-style: normal;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    color: #fafafa;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+}
+
+.second-section {
+    width: 100%;
+    height: 500px;
+    background: #2B4D6B;
+}
+
+.second-section .container {
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: PT Serif;
+    font-style: normal;
+    color: #2B4D6B;
+    background: #E0E0E0;
+    padding: 10px;
+    transform: translate(0, -20%);
+    z-index: 2;
+}
+
+.card .title {
+    font-family: Aldrich;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* Responsivo Index */
+
+@media screen and (min-width: 1200px) {
+    .card {
+        font-size: 1.25em;
+    }
+
+    .card .title {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .card {
+        font-size: 1em;
+    }
+
+    .card .title {
+        font-size: 1.25em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .card {
+        font-size: .8em;
+        height: 200px;
+        transform: translate(0, -70px);
+    }
+
+    .card .title {
+        font-size: 1.25em;
+    }
+
+    .description {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .second-section{
+        height: 900px;
+    }
+    .card-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card {
+        width: 40%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-text{
+        font-size: 1.5em;
+    }
+    .main-btn{
+        font-size: 1em;
+    }
+}
+
+/* 
 ▄████████  ▄██████▄  ███▄▄▄▄       ███        ▄████████     ███      ▄██████▄  
 ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄   ███    ███ ▀█████████▄ ███    ███ 
 ███    █▀  ███    ███ ███   ███    ▀███▀▀██   ███    ███    ▀███▀▀██ ███    ███ 
@@ -303,10 +477,12 @@
         width: 100%;
         margin: 10px 0px;
     }
+
     .title-contato {
         font-size: 2.5em;
     }
-    .submit-enviar{
+
+    .submit-enviar {
         font-size: 1em;
     }
 }
@@ -337,10 +513,12 @@
         width: 100%;
         margin: 5px 0px;
     }
+
     .title-contato {
         font-size: 2em;
     }
-    .submit-enviar{
+
+    .submit-enviar {
         font-size: .75em;
         padding: 5px;
     }
