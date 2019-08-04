@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; Leia-me</title>
+    <link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+</head>
+<body>
+<h1 id="logo">
+	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
+	<br /> VersÃ£o 5.2
+</h1>
+<p style="text-align: center">Plataforma de publicaÃ§Ã£o semÃ¢ntica pessoal</p>
+
+<h2>SaudaÃ§Ãµes</h2>
+<p>O WordPress Ã© um projeto muito especial para mim. Todo desenvolvedor e colaborador acrescenta algo Ãºnico nessa mistura, e juntos nÃ³s criamos algo bonito do qual me orgulho de fazer parte. Milhares de horas foram investidas no WordPress, e nÃ³s nos dedicamos a melhorÃ¡-lo todos os dias. Obrigado por tornÃ¡-lo parte de seu mundo.</p>
+<p style="text-align: right">&#8212; Matt Mullenweg</p>
+
+<h2>A famosa instalaÃ§Ã£o de 5 minutos</h2>
+<ol>
+	<li>Descompacte o pacote em uma pasta vazia e envie tudo.</li>
+	<li>Abra <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> em seu navegador. VocÃª terÃ¡ acesso aoÂ processo de configuraÃ§Ã£o do arquivo <code>wp-config.php</code> com os detalhes de conexÃ£o do seu banco de dados.
+		<ol>
+			<li>Se por algum motivo isto nÃ£o funcionar, nÃ£o se preocupe. O funcionamento nÃ£o Ã© o mesmo em todos os servidores de hospedagem.Â Abra o arquivo <code>wp-config-sample.php</code> com um editor de texto como o WordPad ou similar e preencha suas informaÃ§Ãµes de conexÃ£o do banco de dados.</li>
+			<li>Salve o arquivo como <code>wp-config.php</code> e envie.</li>
+			<li>Abra o arquivo <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> no seu navegador.</li>
+		</ol>
+	</li>
+	<li>Quando o arquivo e a configuraÃ§Ã£o estiverem prontos,Â o instalador criarÃ¡ as tabelas necessÃ¡rias para o seu site. Se ocorrer algum erro, confira mais uma vez seu arquivo <code>wp-config.php</code>, e tente novamente. Se falhar novamente, visite os <a href="https://wordpress.org/support/" title="fÃ³runs de suporte">fÃ³runs de suporte</a> com todas as informaÃ§Ãµes que vocÃª puder reunir.</li>
+	<li><strong>Se vocÃª nÃ£o tiver digitadoÂ uma senha, anote a senha fornecida.</strong> Se nÃ£o tiver fornecido um nome de usuÃ¡rio, ele serÃ¡ <code>administrador</code>.</li>
+	<li>A instalaÃ§Ã£o deve entÃ£o encaminhar vocÃª Ã  <a href="wp-login.php">pÃ¡gina de login</a>. Preencha o nome de usuÃ¡rio e a senha escolhida durante a instalaÃ§Ã£o. Se uma senha foi gerada para vocÃª, Ã© possÃ­vel clicar em &#8220;Perfil&#8221; para alterÃ¡-la.</li>
+</ol>
+
+<h2>Atualizando</h2>
+<h3>Usando o atualizador automÃ¡tico</h3>
+<p>Se estiver atualizando a versÃ£o 2.7 ou mais recente, vocÃª pode usar o atualizador automÃ¡tico:</p>
+<ol>
+	<li>Abra <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> em seu navegador e siga as instruÃ§Ãµes.</li>
+	<li>VocÃª queria mais? Ã sÃ³ isso!</li>
+</ol>
+
+<h3>AtualizaÃ§Ã£o manual</h3>
+<ol>
+	<li>Antes de atualizar qualquer coisa, nÃ£o se esqueÃ§a de fazer backups de quaisquer arquivos que vocÃª possa ter modificado, tais como o <code>index.php</code>.</li>
+	<li>Exclua os arquivos velhos do WordPress, mas salve os que vocÃª modificou.</li>
+	<li>FaÃ§a o envio dos novos arquivos.</li>
+	<li>Acesse a pÃ¡gina <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>.</span> no seu navegador.</li>
+</ol>
+
+<h2>Migrando de outros sistemas</h2>
+<p>O WordPress consegue <a href="https://codex.wordpress.org/pt-br:Importando_conte%C3%BAdo">importar conteÃºdo de vÃ¡rios sistemas</a>. Primeiro vocÃª precisa instalar o WordPressd conforme descrito acima e entÃ£o usarÂ <a title="Importar para o WordPress" href="wp-admin/import.php">nossa ferramenta para importar</a>.</p>
+
+<h2>Requisitos do sistema</h2>
+<ul>
+	<li><a href="https://secure.php.net/">PHP</a> versÃ£o <strong>5.2.4</strong> ouÂ posterior.</li>
+	<li><a href="https://www.mysql.com/">MySQL</a> versÃ£o <strong>5.0</strong> ouÂ posterior.</li>
+</ul>
+
+<h3>RecomendaÃ§Ãµes do sistema</h3>
+<ul>
+	<li><a href="https://secure.php.net/">PHP</a> versÃ£o <strong>7</strong> ouÂ posterior.</li>
+	<li><a href="https://www.mysql.com/">MySQL</a> versÃ£o <strong>5.6</strong> ouÂ posterior.</li>
+	<li>O mÃ³dulo <a href="https://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> do Apache.</li>
+	<li>Suporte a <a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a>.</li>
+	<li>Um link para  <a href="https://wordpress.org/">wordpress.org</a> no seu site.</li>
+</ul>
+
+<h2>Recursos online</h2>
+<p>Se vocÃª ainda tiver alguma dÃºvida que nÃ£o tenha sido esclarecida neste documento, aproveite a grande quantidade de recursos online do WordPress:</p>
+<dl>
+	<dt><a href="https://codex.wordpress.org/P%C3%A1gina_Inicial">WordPress Codex</a></dt>
+		<dd>O Codex Ã© uma enciclopÃ©dia completa sobre o WordPress. Ã a maior fonte de informaÃ§Ãµes disponÃ­vel sobre o WordPress.</dd>
+	<dt><a href="https://br.wordpress.org/news/">Blog do WordPress</a></dt>
+		<dd>Ã aqui que vocÃª encontrarÃ¡ as Ãºltimas atualizaÃ§Ãµes e as notÃ­cias relacionadas ao WordPress. NotÃ­cias recentes de desenvolvimento do WordPress aparecem em seu painel de administraÃ§Ã£o por padrÃ£o.</dd>
+	<dt><a href="https://planet.wordpress.org/">WordPress Planet</a> (em inglÃªs)</dt>
+		<dd>O WordPress Planet Ã© um agregador de notÃ­cias que reune posts de vÃ¡rios blogs WordPress de toda a web com conteÃºdo.</dd>
+	<dt><a href="https://br.wordpress.org/support/">FÃ³runs de suporte WordPress</a></dt>
+		<dd>Se vocÃª jÃ¡ procurou por todos os lados e ainda nÃ£o encontrou uma resposta para sua pergunta, os fÃ³runs de suporte sÃ£o muito ativos e tÃªm uma grande comunidade pronta para ajudar. Para facilitar a ajuda, nÃ£o se esqueÃ§a de usar um tÃ­tuloÂ descritivo para seu tÃ³pico e descreva sua questÃ£o com o mÃ¡ximo de detalhes possÃ­vel.</dd>
+	<dt><a href="https://codex.wordpress.org/IRC">Canal <abbr title="Internet Relay Chat">IRC</abbr> do WordPress</a> (em inglÃªs)</dt>
+		<dd>HÃ¡ um canal de chat online que Ã© usado para discussÃµes entre pessoas que usam o WordPress e, ocasionalmente, para tÃ³picos de suporte. A pÃ¡gina do wiki acima deve apontar a direÃ§Ã£o correta. (<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>)</dd>
+</dl>
+
+<h2>Notas finais</h2>
+<ul>
+	<li>Se tiver qualquer sugestÃ£o, ideias ou comentÃ¡rios, ou se vocÃª (glup!) encontrou um erro, participe dos <a href="https://br.wordpress.org/support/">fÃ³runs de suporte</a>.</li>
+	<li>O WordPress tem uma <abbr title="Interface de programaÃ§Ã£o de aplicaÃ§Ãµes">API</abbr> de plugin robusta que facilita a criaÃ§Ã£o de plugins. Se vocÃª for um programador interessado em usar esta funcionalidade, consulte a <a href="https://developer.wordpress.org/plugins/">manual do desenvolvedor de plugins (em inglÃªs)</a>. NÃ£o serÃ¡ necessÃ¡rio modificar qualquer cÃ³digo do nÃºcleo.</li>
+</ul>
+
+<h2>Espalhe o amor</h2>
+<p>O WordPress nÃ£o tem uma campanha de marketing multi milionÃ¡ria ou o patrocÃ­nio de celebridades, mas temos algo muito melhor: vocÃª. Se vocÃª gostar do WordPress, pense com carinho em recomendÃ¡-lo a um amigo ou configurÃ¡-lo para alguÃ©m com menos conhecimentos do que vocÃª, ou ainda, escrever para um autor que nÃ£o conheÃ§a o WordPress.</p>
+
+<p>O WordPress Ã© a continuaÃ§Ã£o oficial do <a href="http://cafelog.com/">b2/caf&#233;log</a>, de Michel V. O trabalho foi continuado pelos <a href="https://wordpress.org/about/">desenvolvedores do WordPress</a>. Se vocÃª quiser apoiar o WordPress, por favor, pense na possibilidade de fazer um <a href="https://wordpress.org/donate/" title="Doar para o WordPress">doaÃ§Ã£o</a>.</p>
+
+<h2>LicenÃ§a</h2>
+<p>O WordPress Ã© um software livre, distribuido sob os termos da licenÃ§a <abbr title="GNU General Public License (LicenÃ§a PÃºblica Geral)">GPL</abbr> versÃ£o 2 ou (Ã  sua escolha) qualquer versÃ£o posterior. Veja <a href="license.txt">license.txt</a>.</p>
+
+</body>
+</html>
