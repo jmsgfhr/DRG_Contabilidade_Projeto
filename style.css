@@ -21,10 +21,12 @@
 @media screen and (min-width: 1400px) {
 
     .header .container,
-    .footer .container {
+    .footer .container,
+    .second-section .container {
         max-width: 1400px;
     }
 }
+
 
 /* ▄█    █▄       ▄████████    ▄████████ ████████▄     ▄████████    ▄████████ 
   ███    ███     ███    ███   ███    ███ ███   ▀███   ███    ███   ███    ███ 
@@ -262,19 +264,91 @@
     color: #2B4D6B;
     background: #E0E0E0;
     padding: 10px;
-    transform: translate(0,-20%);
+    transform: translate(0, -20%);
     z-index: 2;
 }
-.card .title{
+
+.card .title {
     font-family: Aldrich;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-.description{
+
+.description {
     color: #fafafa;
     text-align: center;
+    margin-bottom: 100px;
 }
 
+/* Responsivo Index */
+
+@media screen and (min-width: 1200px) {
+    .card {
+        font-size: 1.25em;
+    }
+
+    .card .title {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .card {
+        font-size: 1em;
+    }
+
+    .card .title {
+        font-size: 1.25em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .card {
+        font-size: .8em;
+        height: 200px;
+        transform: translate(0, -70px);
+    }
+
+    .card .title {
+        font-size: 1.25em;
+    }
+
+    .description {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .second-section{
+        height: 900px;
+    }
+    .card-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card {
+        width: 40%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-text{
+        font-size: 1.5em;
+    }
+    .main-btn{
+        font-size: 1em;
+    }
+}
 
 /* 
 ▄████████  ▄██████▄  ███▄▄▄▄       ███        ▄████████     ███      ▄██████▄  
