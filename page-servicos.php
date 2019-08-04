@@ -8,46 +8,38 @@
     <div class="container">
         <section class="first-services">
             <div class="title-services">
-                <h1>Nossos Serviços</h1>
+                <h1><?php the_field('titulo_servico'); ?></h1>
             </div>
             <div class="description-one">
-                <h3>A DGR terceiriza todos os departamentos de modo que a prestação de serviços pode ser desenvolvida
-                    nas dependências do cliente, nossa equipe é instalada em função do perfil e necessidades da empresa.
+                <h3><?php the_field('subtitulo_servico'); ?>
                 </h3>
             </div>
         </section>
         <section class="second-services">
             <div class="list-services">
-                <h2>Legalização de empresa</h2>
+                <h2><?php the_field('titulo_servico_um'); ?></h2>
                 <ul>
-                    <li>Abertura de empresas</li>
-                    <li>Encerramento definitivo e provisório</li>
-                    <li>Inscrição de alvará</li>
-                    <li>Inscrição CNPJ</li>
-                    <li>Inscrição estadual</li>
-                    <li>Alteração contratual</li>
-                    <li>Legalização de Food Truck</li>
+                    <li><?php the_field('servico_um'); ?></li>
+                    <li><?php the_field('servico_dois'); ?></li>
+                    <li><?php the_field('servico_tres'); ?></li>
+
                 </ul>
             </div>
             <div class="list-services">
-                <h2>Inscrição e Alvarás</h2>
+                <h2><?php the_field('titulo_servico_dois'); ?></h2>
                 <ul>
-                    <li>Assessoria</li>
-                    <li>Departamento pessoal</li>
-                    <li>Empregador doméstico</li>
-                    <li>Fiscal</li>
-                    <li>Contábil</li>
-                    <li>Imposto de renda pessoa física e jurídica</li>
+                    <li><?php the_field('servico_quatro'); ?></li>
+                    <li><?php the_field('servico_cinco'); ?></li>
+                    <li><?php the_field('servico_seis'); ?></li>
+
                 </ul>
             </div>
             <div class="list-services">
-                <h2>Rotina Mensal</h2>
+                <h2><?php the_field('titulo_servico_tres'); ?></h2>
                 <ul>
-                    <li>Escrituração contábil e fiscal</li>
-                    <li>Apuração e cálculos de impostos e tributos</li>
-                    <li>Folha de pagamento</li>
-                    <li>Registro de funcionários, admissão e demissão</li>
-                    <li>Balancete mensal e anual</li>
+                    <li><?php the_field('servico_sete'); ?></li>
+                    <li><?php the_field('servico_oito'); ?></li>
+                    <li><?php the_field('servico_nove'); ?></li>
                 </ul>
             </div>
         </section>

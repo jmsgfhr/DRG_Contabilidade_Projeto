@@ -10,7 +10,7 @@
             <div class="main-logo">
                 <img src="assets/img/logo-main-section.png">
             </div>
-            <h1 class="main-text">Soluções contábeis e jurídicas</h1>
+            <h1 class="main-text"><?php the_field('main_text'); ?></h1>
             <a class="main-btn" href="#">Entre em contato</a>
         </div>
     </div>
@@ -20,38 +20,24 @@
     <div class="container">
         <div class="card-section">
             <div class="card">
-                <h2 class="title">Missão</h2>
-                <p class="conteudo">Oferecer e prestar serviços de assessoria, informações, soluções administrativas
-                    e
-                    contábeis, visando
-                    a satisfação das partes interessadas com tecnologia e melhoria contínua dos processos.</p>
+                <h2 class="title"><?php the_field('servico_um'); ?> </h2>
+                <p class="conteudo"><?php the_field('conteudo_servico_um'); ?> </p>
             </div>
             <div class="card">
-                <h2 class="title">Visão</h2>
-                <p class="conteudo">Ser referência no mercado pelo padrão de excelência nos serviços prestados e ser
-                    reconhecida na
-                    região em que atua pelas constantes melhorias das condições de trabalho e desenvolvimento
-                    profissional de seus colaboradores. </p>
+                <h2 class="title"><?php the_field('servico_dois'); ?></h2>
+                <p class="conteudo"><?php the_field('conteudo_servico_dois'); ?> </p>
             </div>
             <div class="card">
                 <!-- Nessa div, o texto ele é uma palavra emabaixo da outra, por isso os br's -->
-                <h2 class="title">Negócio</h2>
-                <p class="conteudo">Assessoria
-                    <!--  <br> -->
-                    Informações
-                    <!--  <br> -->
-                    Soluções administrativas
-                    <!--  <br> -->
-                    Soluções contábeis </p>
+                <h2 class="title"><?php the_field('servico_tres'); ?></h2>
+                <p class="conteudo"><?php the_field('conteudo_servico_tres'); ?> </p>
             </div>
         </div>
 
         <div class="description">
-            <p>A DGR terceiriza todos os departamentos de modo que a prestação de serviços pode ser desenvolvida nas
-                dependências do cliente, nossa equipe é instalada em função do perfil e necessidades da empresa.
+            <p><?php the_field('descricao_um'); ?>
             </p>
-            <p>A empresa se mantém no mercado desde fevereiro de 2013 e continua crescendo e buscando melhorias em
-                seu capital intelectual para melhor atender seus clientes. </p>
+            <p><?php the_field('descricao_dois'); ?> </p>
         </div>
     </div>
 </section>

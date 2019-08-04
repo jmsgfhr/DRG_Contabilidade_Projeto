@@ -1,4 +1,4 @@
-/*▄████████  ▄██████▄  ███▄▄▄▄       ███        ▄████████  ▄█  ███▄▄▄▄      ▄████████    ▄████████ 
+﻿/*▄████████  ▄██████▄  ███▄▄▄▄       ███        ▄████████  ▄█  ███▄▄▄▄      ▄████████    ▄████████ 
 ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄   ███    ███ ███  ███▀▀▀██▄   ███    ███   ███    ███ 
 ███    █▀  ███    ███ ███   ███    ▀███▀▀██   ███    ███ ███▌ ███   ███   ███    █▀    ███    ███ 
 ███        ███    ███ ███   ███     ███   ▀   ███    ███ ███▌ ███   ███  ▄███▄▄▄      ▄███▄▄▄▄██▀ 
@@ -74,6 +74,21 @@
     color: #fafafa;
 }
 
+.btn-nav::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: .3s;
+    background-color: #fafafa;
+}
+
+.btn-nav:hover:after {
+    width: 100%;
+    transition: .3s;
+}
+
+
 .telefones {
     display: flex;
     flex-direction: column;
@@ -85,6 +100,29 @@
 
 .btn-tel {
     color: #fafafa;
+}
+
+.hamburg {
+    display: none;
+    z-index: 4;
+}
+
+.hamburg-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: #2B4D6B;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Responsivo Header */
@@ -123,7 +161,8 @@
     }
 
     .btn-nav {
-        font-size: 1em;
+        font-size: 3em;
+        color: #fafafa;
     }
 
     .btn-tel {
@@ -134,9 +173,21 @@
         height: 50px;
     }
 
-    .menu {
+    .header .menu {
         display: none;
     }
+
+    .hamburg {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .hamburg .img-hamburg {
+        display: inline-block;
+        height: 100%;
+        cursor: pointer;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -145,16 +196,11 @@
     }
 
     .btn-nav {
-        font-size: .75em;
+        font-size: 2.5em;
     }
 
     .btn-tel {
         font-size: .25em;
-    }
-
-    .telefones {
-        padding: 1px 5px;
-        max-height: 60%;
     }
 }
 
@@ -164,17 +210,13 @@
     }
 
     .btn-nav {
-        font-size: .5em;
+        font-size: 2em;
     }
 
     .btn-tel {
         font-size: .25em;
     }
 
-    .telefones {
-        padding: 1px 5px;
-        max-height: 60%;
-    }
 }
 
 /* 
@@ -233,6 +275,13 @@
     color: #fafafa;
     background-color: transparent;
     border: 2px solid #fafafa;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    background: #fafafa;
+    transition: .3s;
+    color: #2B4D6B;
 }
 
 .second-section {
@@ -352,16 +401,8 @@
     }
 }
 
-/* 
-███▄▄▄▄    ▄██████▄      ███      ▄█   ▄████████  ▄█     ▄████████    ▄████████ 
-███▀▀▀██▄ ███    ███ ▀█████████▄ ███  ███    ███ ███    ███    ███   ███    ███ 
-███   ███ ███    ███    ▀███▀▀██ ███▌ ███    █▀  ███▌   ███    ███   ███    █▀  
-███   ███ ███    ███     ███   ▀ ███▌ ███        ███▌   ███    ███   ███        
-███   ███ ███    ███     ███     ███▌ ███        ███▌ ▀███████████ ▀███████████ 
-███   ███ ███    ███     ███     ███  ███    █▄  ███    ███    ███          ███ 
-███   ███ ███    ███     ███     ███  ███    ███ ███    ███    ███    ▄█    ███ 
- ▀█   █▀   ▀██████▀     ▄████▀   █▀   ████████▀  █▀     ███    █▀   ▄████████▀   */
-                                                                                
+/* noticias */
+
 .noticias {
     width: 100%;
     height: 600px;
@@ -458,42 +499,49 @@
 /* Noticias Responsivo */
 
 @media (max-width: 991.98px) {
-    .noticias{
+    .noticias {
         height: 1000px;
     }
-    .noticias .container{
+
+    .noticias .container {
         flex-direction: column;
         justify-content: space-around;
     }
-    .destaque{
+
+    .destaque {
         width: 90%;
     }
-    .destaque .notice::before{
+
+    .destaque .notice::before {
         right: 80px;
     }
-    .links{
+
+    .links {
         margin: 0;
     }
-    .links .notice{
+
+    .links .notice {
         margin-top: 30px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .noticias{
+    .noticias {
         height: 1200px;
     }
 
-    .destaque .notice::before{
+    .destaque .notice::before {
         right: 60px;
     }
-    .links{
+
+    .links {
         flex-direction: column;
         justify-content: space-around;
         width: 80%;
         height: 70%;
     }
-    .links .notice{
+
+    .links .notice {
         width: 100%;
         height: 20%;
     }
@@ -559,6 +607,13 @@
     color: #fafafa;
     background-color: #2B4D6B;
     margin-bottom: 50px;
+    transition: .3s;
+}
+
+.submit-enviar:hover {
+    background-color: #fafafa;
+    color: #2B4D6B;
+    transition: .3s;
 }
 
 /* Responsivo Header */
@@ -676,8 +731,160 @@
     }
 }
 
+/*
+SSSSSSSSSSSSSSS                                                                 iiii                                                        
+ SS:::::::::::::::S                                                               i::::i                                                       
+S:::::SSSSSS::::::S                                                                iiii                                                        
+S:::::S     SSSSSSS                                                                                                                            
+S:::::S                eeeeeeeeeeee    rrrrr   rrrrrrrrrvvvvvvv           vvvvvvviiiiiii     cccccccccccccccc   ooooooooooo       ssssssssss   
+S:::::S              ee::::::::::::ee  r::::rrr:::::::::rv:::::v         v:::::v i:::::i   cc:::::::::::::::c oo:::::::::::oo   ss::::::::::s  
+ S::::SSSS          e::::::eeeee:::::eer:::::::::::::::::rv:::::v       v:::::v   i::::i  c:::::::::::::::::co:::::::::::::::oss:::::::::::::s 
+  SS::::::SSSSS    e::::::e     e:::::err::::::rrrrr::::::rv:::::v     v:::::v    i::::i c:::::::cccccc:::::co:::::ooooo:::::os::::::ssss:::::s
+    SSS::::::::SS  e:::::::eeeee::::::e r:::::r     r:::::r v:::::v   v:::::v     i::::i c::::::c     ccccccco::::o     o::::o s:::::s  ssssss 
+       SSSSSS::::S e:::::::::::::::::e  r:::::r     rrrrrrr  v:::::v v:::::v      i::::i c:::::c             o::::o     o::::o   s::::::s      
+            S:::::Se::::::eeeeeeeeeee   r:::::r               v:::::v:::::v       i::::i c:::::c             o::::o     o::::o      s::::::s   
+            S:::::Se:::::::e            r:::::r                v:::::::::v        i::::i c::::::c     ccccccco::::o     o::::ossssss   s:::::s 
+SSSSSSS     S:::::Se::::::::e           r:::::r                 v:::::::v        i::::::ic:::::::cccccc:::::co:::::ooooo:::::os:::::ssss::::::s
+S::::::SSSSSS:::::S e::::::::eeeeeeee   r:::::r                  v:::::v         i::::::i c:::::::::::::::::co:::::::::::::::os::::::::::::::s 
+S:::::::::::::::SS   ee:::::::::::::e   r:::::r                   v:::v          i::::::i  cc:::::::::::::::c oo:::::::::::oo  s:::::::::::ss  
+ SSSSSSSSSSSSSSS       eeeeeeeeeeeeee   rrrrrrr                    vvv           iiiiiiii    cccccccccccccccc   ooooooooooo     sssssssssss    
+                                                                                                                                               */
+/*Page-serviços*/
 
-/* ▄████████  ▄██████▄   ▄██████▄      ███        ▄████████    ▄████████ 
+:root {
+    --blue: #2B4D6B;
+    --gray: #E0E0E0;
+}
+
+.servicos .container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Título */
+
+.servicos .title-services h1 {
+    font-family: Aldrich;
+    font-size: 2.25em;
+    color: var(--blue);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+/* Descrição */
+
+.servicos .description-one h3 {
+    font-family: PT serif;
+    font-size: 1.125em;
+    color: var(--blue);
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 95%;
+}
+
+/* Serviços */
+
+.servicos .second-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.servicos .list-services {
+    background-color: var(--gray);
+    margin: 30px 30px;
+    padding: 10px;
+    font-weight: normal;
+    height: 300px;
+    line-height: 30px;
+}
+
+.servicos .second-services h2 {
+    color: var(--blue);
+    font-family: Aldrich;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+.servicos .second-services li {
+    font-family: PT serif;
+    font-size: 1.125em;
+    color: var(--blue);
+    display: block;
+    list-style-type: disc;
+}
+
+.servicos .second-services li::before {
+    content: "·";
+    font-size: 90px;
+    line-height: 20px;
+    vertical-align: -22px;
+}
+
+/* Responsivo Serviços */
+
+@media screen and (min-width: 1200px) {
+    .servicos .container {
+        max-width: 1200px;
+        font-size: 1.5em;
+    }
+
+    .servicos .list-services {
+        width: 30%;
+        height: 360px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .servicos .container {
+        font-size: 1em;
+    }
+
+    .servicos .list-services {
+        height: 350px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .servicos .container {
+        font-size: .9em;
+    }
+
+    .servicos .list-services {
+        height: 360px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .servicos .second-services {
+        flex-direction: column;
+    }
+
+    .servicos .list-services {
+        height: 350px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .servicos .container {
+        font-size: .75em;
+    }
+}
+
+
+/* 
+    ▄████████  ▄██████▄   ▄██████▄      ███        ▄████████    ▄████████ 
    ███    ███ ███    ███ ███    ███ ▀█████████▄   ███    ███   ███    ███ 
    ███    █▀  ███    ███ ███    ███    ▀███▀▀██   ███    █▀    ███    ███ 
   ▄███▄▄▄     ███    ███ ███    ███     ███   ▀  ▄███▄▄▄      ▄███▄▄▄▄██▀ 
