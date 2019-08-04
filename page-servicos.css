@@ -1,22 +1,21 @@
-
- 
-:root{
+:root {
     --blue: #2B4D6B;
     --gray: #E0E0E0;
 }
 
-.container{
+.container {
     display: flex;
+    flex-direction: column;
 }
 
 
 /* Título */
 
-.title-services h1{
+.title-services h1 {
     font-family: Aldrich;
     font-size: 2.25em;
-    color:var(--blue);
-    text-align: center;   
+    color: var(--blue);
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 40px;
     font-weight: normal;
@@ -25,7 +24,7 @@
 
 /* Descrição */
 
-.description-one h3{
+.description-one h3 {
     font-family: PT serif;
     font-size: 1.125em;
     color: var(--blue);
@@ -37,44 +36,24 @@
 
 /* Serviços */
 
-.second-services{
+.second-services {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.legalization{
+.list-services {
     background-color: var(--gray);
     margin-right: 30px;
     margin-left: 30px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 0 10px 10px 0;
     font-weight: normal;
     height: 300px;
     line-height: 30px;
 }
 
-.subscription{
-    background-color: var(--gray);
-    margin-right: 30px;
-    margin-left: 30px;
-    margin:0 auto;
-    padding: 0 10px 10px 0;
-    font-weight: normal;
-    height: 300px;
-    line-height: 30px;
-}
-
-.routine{
-    background-color: var(--gray);
-    margin-right: 30px;
-    margin-left: 30px;
-    margin:0 auto;
-    padding: 0 10px 10px 0;
-    font-weight: normal;
-    height: 300px;
-    line-height: 30px;
-}
-
-.second-services h2{
+.second-services h2 {
     color: var(--blue);
     font-family: Aldrich;
     font-size: 1.5em;
@@ -83,12 +62,11 @@
     font-weight: normal;
 }
 
-.second-services li{
+.second-services li {
     font-family: PT serif;
     font-size: 1.125em;
-    color:var(--blue);
+    color: var(--blue);
     display: block;
-    width: 350px;
     list-style-type: disc;
 }
 
@@ -99,3 +77,54 @@
     vertical-align: -22px;
 }
 
+/* Responsivo Serviços */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        font-size: 1.5em;
+    }
+
+    .list-services {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        font-size: 1em;
+    }
+
+    .list-services {
+        height: 350px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        font-size: .9em;
+    }
+
+    .list-services {
+        height: 360px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .second-services {
+        flex-direction: column;
+    }
+
+    .list-services {
+        height: 350px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        font-size: .75em;
+    }
+}
