@@ -1,0 +1,101 @@
+
+ 
+:root{
+    --blue: #2B4D6B;
+    --gray: #E0E0E0;
+}
+
+.container{
+    display: flex;
+}
+
+
+/* Título */
+
+.title-services h1{
+    font-family: Aldrich;
+    font-size: 2.25em;
+    color:var(--blue);
+    text-align: center;   
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+/* Descrição */
+
+.description-one h3{
+    font-family: PT serif;
+    font-size: 1.125em;
+    color: var(--blue);
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 95%;
+}
+
+/* Serviços */
+
+.second-services{
+    display: flex;
+}
+
+.legalization{
+    background-color: var(--gray);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin:0 auto;
+    padding: 0 10px 10px 0;
+    font-weight: normal;
+    height: 300px;
+    line-height: 30px;
+}
+
+.subscription{
+    background-color: var(--gray);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin:0 auto;
+    padding: 0 10px 10px 0;
+    font-weight: normal;
+    height: 300px;
+    line-height: 30px;
+}
+
+.routine{
+    background-color: var(--gray);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin:0 auto;
+    padding: 0 10px 10px 0;
+    font-weight: normal;
+    height: 300px;
+    line-height: 30px;
+}
+
+.second-services h2{
+    color: var(--blue);
+    font-family: Aldrich;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+.second-services li{
+    font-family: PT serif;
+    font-size: 1.125em;
+    color:var(--blue);
+    display: block;
+    width: 350px;
+    list-style-type: disc;
+}
+
+.second-services li::before {
+    content: "·";
+    font-size: 90px;
+    line-height: 20px;
+    vertical-align: -22px;
+}
+
